@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Ankara Bilim Üniverstesi</title>
+    </head>
+    <body>
+        <div>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakıkımızda.html">Hakkımızda</a>
+            <a href="iletişim.html">İletişim</a>
+        </div>
+        <h1>Ankara Bilim Üniversitesi</h1>
+        <p>Telefon Numarası:031200000000</p>
+        <p>Email Adresi:info@ankarabilim.edu.tr</p>
+    </body>
+</html>
+            
