@@ -2,22 +2,44 @@
     <head>
         <title>Ankara Bilim Üniversitesi</title>
       <link rel="stylesheet" href="stsyles.css">
+<style>
+    #slider img {
+        display: none;
+
+    }
+    #slider img.active{
+        display: block;
+    }
+</style>
+<script>
+    const numOfSlides=3;
+    let activeSlide=0;
+
+    setInterval(function(){
+        document.guerySelectorAll("# slider img")[activeSlide].classList.remove('active');
+        document.guerySelectorAll("# slider img")[activeSlide +1].classList.remove('active');
+        activeSlide=(activeSlide+1) % numOfSlides;
+    },2000);
+ </script>
     </head>
     <body>
-        <h1>Ankara Bilim Üniversitesi Sayfası</h1>
         <div>
             <a href="index.html">Ana Sayfa</a>
             <a href="hakkımızda.html">Hakkımızda/a>
             <a href="iletişim.html">İletişim</a>
+            <a href="görsel.html">Görsel</a>
             </div>
-            <p>17 Nisan 2020 tarih ve 31102 sayılı Resmi Gazete’ de yayımlanarak fiili kuruluşunu tamamlayan Ankara Bilim Üniversitesi, 21 Nisan 2016 tarihinde kurulan; amacı “ sürdürülebilir kalkınmayı” bireysel ve kurumsal düzeyde yaygınlaştıracak bilinç ve kültürü geliştirmek; bu mânâda, ülkemiz ve dünyadaki gelişmeleri yakından takip ederek; çevre, ekonomik hedefler ve insan niteliği itibariyle yüksek verimlilik standart ve uygulamaları belirlemekle mükellef bir sivil toplum örgütü olan Türkiye Verimlilik Vakfı tarafından; bu temel strateji ve hedefler doğrultusunda kurulmuş bir vakıf üniversitedir.>
-            <img src="https://ankarabilim.edu.tr/" >
-    </body>
-</html>  
-
-
-
-
+            <h1>Ankara Bilim Üniversitesi</h1>
+             <div id:"slider">
+            <img src="https://ankarabilim.edu.tr/assets/images/anasayfa-banner/lisansustu.jpg?v=2" class="active" alt="">
+            <img src="https://ankarabilim.edu.tr/assets/images/anasayfa-banner/hazirlik-okulu.jpg?v=2" alt="">
+            <img src="https://ankarabilim.edu.tr/assets/images/anasayfa-banner/meslekyuksekokulu.jpg?v=2" alt="">
+            <img src="https://ankarabilim.edu.tr/assets/images/anasayfa-banner/fakulteler.jpg?v=2" alt="">
+             </div>
+             <p>İnsan, eşya ve değer üçlüsünün ortaklığıdır eğitim ortamının karşılığı Ankara Bilim Üniversitesi'nde; eşyanın, sadece, ihtiyacı tedarik etmesinin ötesine geçilerek; temasın bilgi, derinlik, heyecan ve estetikle bütünleştirildiği; farklı fiziksel ortam, bağlam ve kültürlerin birbiri içerisinde dokunduğu, aktif, üretken, yaratıcı bir karşılıktır Ankara Bilim için>
+             <img src="https://ankarabilim.edu.tr/assets/drop/dropimg_9a155a319d2e8bf4a5fe579d13fd53406498028861eb3cc24ddb1cf43744c43aa735179a.JPG">
+        </body>
+</html>
 
 
 

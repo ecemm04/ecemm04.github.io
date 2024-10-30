@@ -1,0 +1,76 @@
+<html>
+    <head>
+    <title>Görseller</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      #gallery {
+        flex-wrap:wrap;
+        gap:20px;
+      }
+      #gallery img{
+        width:45%;
+      }
+      #gallery-popup{
+        display:none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top:5%;
+        left:5%;
+        width:90%;
+        height:90%;
+        background: #000;
+      }
+      #gallery-popup img{
+        width:100%;
+
+      }
+      #gallery-popup-close{
+        position:absolute;
+        top:0;
+        right:0;
+      }
+      #gallery-popup-close:hover{
+       background: blue;
+      }
+      </style>
+    </head>
+  </body>
+
+</body>
+  <div id="gallery">
+ <a href="index.html">Ana Sayfa</a>
+ <a href="hakkımızda.html">Hakkımızda</a>
+ <a href="görsel.html">Görseller</a>
+ <a href="iletişim.html">İletişim</a>
+  </div>
+
+  <div id="gallery-popup">
+    <img src="image/fakulteler.jpg" alt="">
+    <img src="image/hazirlik-okulu.jpg" alt="">
+    <img src="image/lisansustu.jpg" alt="">
+    <img src="image/meslekyuksekokulu.jpg" alt="">
+  </div>
+  <h1>Ankara Bilim Üniversitesi Resmi Sayfa</h1>
+       <div id="gallery">
+        <img src="https://ankarabilim.edu.tr/assets/drop/dropimg_07788d811827a95f2c86239a764b94920379ec3faccad8485f136bd94b1486e1e367ac8c.JPG"> 
+        
+         <button id="gallery-popup-close">X</button>
+       </div> 
+       <script>
+        const images=document.guerySelectorAll("#gallery img");
+        images.forEach(img => {
+        img.addEventListener('click',(e) => {
+          document.getElementById("gallery-popup").style.display="flex;"
+          document.guerySelector("gallery-popup-img").setAttribute("src,",e.target.src);
+
+        });
+      });
+      
+        document.getElemanByld("gallery-popup-close").addEventListener('click',() =>{
+          document.getElemanByld("gallery-popup").style.display="none";
+        })
+</script>
+</html>
+
+    
